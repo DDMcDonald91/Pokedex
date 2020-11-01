@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: orangered;
+  font-family: 'Syne Mono', monospace;
+}
+
+.card{
+list-style: none;
+padding: 40px;
+background-color: white;
+color: #222;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.card:hover{
+  animation: bounce .7s linear;
+}
+
+@keyframes bounce {
+    20%{
+      transform: translateY(-15px);
+    }
+    40%{
+      transform: translateY(0px);
+    }
+    60%{
+      transform: translateY(-8px);
+    }
+    80%{
+      transform: translateY(-0px);
+    }
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle{
+  font-weight: lighter;
+  color: black;
+  margin-top: 5px;
+}
+
+
+
+#pokedex{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.container{
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 20px;
+  margin: 10px 0;
+}
